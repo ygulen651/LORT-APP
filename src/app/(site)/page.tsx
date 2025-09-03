@@ -70,11 +70,15 @@ const fallbackSlides = [
 // MongoDB'den slides çek
 async function getSlides() {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/slides`, {
-      cache: 'no-store'
-    })
-    if (response.ok) {
-      return await response.json()
+    // Doğrudan MongoDB'den veri çek
+    const connectDB = (await import('@/lib/mongodb')).default
+    const { default: Slide } = await import('@/models/Slide')
+    
+    await connectDB()
+    const slides = await Slide.find({ isActive: true }).sort({ order: 1 })
+    
+    if (slides && slides.length > 0) {
+      return slides
     }
   } catch (error) {
     console.error('Slides fetch error:', error)
