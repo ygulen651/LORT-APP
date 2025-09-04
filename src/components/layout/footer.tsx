@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Smartphone, Mail, Phone, MapPin } from 'lucide-react'
+import { Smartphone, Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react'
 import { Container } from './container'
 import Image from 'next/image'
 
@@ -36,6 +36,31 @@ export function Footer() {
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4 text-orange-500" />
                   <span>İstanbul, Türkiye</span>
+                </div>
+              </div>
+              
+              {/* Sosyal Medya */}
+              <div className="mt-6">
+                <h4 className="text-sm font-medium text-white mb-3">Sosyal Medya</h4>
+                <div className="flex space-x-4">
+                  <Link 
+                    href="https://www.facebook.com/lortapp" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-gray-400 hover:text-orange-400 transition-colors"
+                  >
+                    <Facebook className="h-5 w-5 text-orange-500" />
+                    <span className="text-sm">Facebook</span>
+                  </Link>
+                  <Link 
+                    href="https://www.instagram.com/lort.app?igsh=MXVmZG9veHVueTF0Zw==" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-gray-400 hover:text-orange-400 transition-colors"
+                  >
+                    <Instagram className="h-5 w-5 text-orange-500" />
+                    <span className="text-sm">Instagram</span>
+                  </Link>
                 </div>
               </div>
             </div>
