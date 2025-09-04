@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -20,7 +20,7 @@ interface Content {
   isActive: boolean
 }
 
-export default function EditContent({ params }: { params: Promise<{ id: string }> }) {
+function EditContentForm({ params }: { params: Promise<{ id: string }> }) {
   const [formData, setFormData] = useState({
     key: '',
     title: '',
@@ -302,5 +302,17 @@ export default function EditContent({ params }: { params: Promise<{ id: string }
         </Card>
       </main>
     </div>
+  )
+}
+
+export default function EditContent({ params }: { params: Promise<{ id: string }> }) {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-white">Yükleniyor...</div>
+      </div>
+    }>
+      <EditContentForm params={params} />
+    </Suspense>
   )
 }

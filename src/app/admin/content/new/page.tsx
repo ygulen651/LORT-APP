@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -9,7 +9,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Card } from '@/components/ui/card'
 import { ArrowLeft, Save } from 'lucide-react'
 
-export default function NewContent() {
+function NewContentForm() {
   const [formData, setFormData] = useState({
     key: '',
     title: '',
@@ -215,6 +215,18 @@ export default function NewContent() {
         </Card>
       </main>
     </div>
+  )
+}
+
+export default function NewContent() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-white">Yükleniyor...</div>
+      </div>
+    }>
+      <NewContentForm />
+    </Suspense>
   )
 }
 
