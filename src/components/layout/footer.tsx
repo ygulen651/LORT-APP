@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Smartphone, Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react'
+import { Facebook, Instagram } from 'lucide-react'
 import { Container } from './container'
 import Image from 'next/image'
 
@@ -24,21 +24,6 @@ export function Footer() {
               <p className="text-gray-300 mb-6">
                 İhracat ve tedarikte akıllı eşleştirme – LORT APP ile doğru partneri dakikalar içinde bulun.
               </p>
-              <div className="space-y-2 text-sm text-gray-400">
-                <div className="flex items-center space-x-2">
-                  <Mail className="h-4 w-4 text-orange-500" />
-                  <span>info@lort.app</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-orange-500" />
-                  <span>+90 (212) 123 45 67</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <MapPin className="h-4 w-4 text-orange-500" />
-                  <span>İstanbul, Türkiye</span>
-                </div>
-              </div>
-              
               {/* Sosyal Medya */}
               <div className="mt-6">
                 <h4 className="text-sm font-medium text-white mb-3">Sosyal Medya</h4>
