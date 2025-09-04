@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, useEffect } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -21,6 +21,15 @@ export default function NewContent() {
   })
   const [loading, setLoading] = useState(false)
   const router = useRouter()
+  const searchParams = useSearchParams()
+
+  // Admin key kontrolü
+  useEffect(() => {
+    const adminKey = searchParams.get('key')
+    if (!adminKey || adminKey !== 'admin-secret-key-2024') {
+      router.push('/admin/dashboard?key=admin-secret-key-2024')
+    }
+  }, [searchParams, router])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target
@@ -44,7 +53,7 @@ export default function NewContent() {
       })
 
       if (response.ok) {
-        router.push('/admin/dashboard')
+        router.push('/admin/dashboard?key=admin-secret-key-2024')
       } else {
         const data = await response.json()
         alert(data.error || 'İçerik oluşturulurken hata oluştu')
@@ -208,5 +217,6 @@ export default function NewContent() {
     </div>
   )
 }
+
 
 

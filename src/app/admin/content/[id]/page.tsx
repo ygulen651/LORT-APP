@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -34,6 +34,7 @@ export default function EditContent({ params }: { params: Promise<{ id: string }
   const [loadingData, setLoadingData] = useState(true)
   const [contentId, setContentId] = useState<string>('')
   const router = useRouter()
+  const searchParams = useSearchParams()
 
   useEffect(() => {
     const getParams = async () => {
@@ -42,6 +43,14 @@ export default function EditContent({ params }: { params: Promise<{ id: string }
     }
     getParams()
   }, [params])
+
+  // Admin key kontrolü
+  useEffect(() => {
+    const adminKey = searchParams.get('key')
+    if (!adminKey || adminKey !== 'admin-secret-key-2024') {
+      router.push('/admin/dashboard?key=admin-secret-key-2024')
+    }
+  }, [searchParams, router])
 
   useEffect(() => {
     if (contentId) {
@@ -93,7 +102,7 @@ export default function EditContent({ params }: { params: Promise<{ id: string }
       })
 
       if (response.ok) {
-        router.push('/admin/dashboard')
+        router.push('/admin/dashboard?key=admin-secret-key-2024')
       } else {
         const data = await response.json()
         alert(data.error || 'İçerik güncellenirken hata oluştu')
@@ -116,7 +125,7 @@ export default function EditContent({ params }: { params: Promise<{ id: string }
       })
 
       if (response.ok) {
-        router.push('/admin/dashboard')
+        router.push('/admin/dashboard?key=admin-secret-key-2024')
       } else {
         const data = await response.json()
         alert(data.error || 'İçerik silinirken hata oluştu')
