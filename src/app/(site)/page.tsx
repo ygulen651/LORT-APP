@@ -150,7 +150,7 @@ export default async function HomePage() {
               </div>
             </div>
             
-            {/* Store Buttons Section - Ultra Modern Design */}
+            {/* Store Buttons Section - Ultra Modern Design - Complete */}
             <div className="mt-8 sm:mt-12 md:mt-16 flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center">
               {/* Apple Store Button */}
               <div className="group relative">
