@@ -102,50 +102,26 @@ export default async function HomePage() {
               <div className="lg:col-span-5 relative order-1 lg:order-2">
                 {/* Main Visual Card - Responsive */}
                 <div className="relative animate-scale-in" style={{ animationDelay: '0.5s' }}>
-                  {/* Multi-layer Glow - Responsive */}
-                  <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3rem] blur-2xl sm:blur-3xl opacity-20 animate-pulse"></div>
-                  <div className="absolute -inset-2 sm:-inset-3 md:-inset-4 bg-gradient-to-br from-orange-400 to-red-600 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] blur-xl sm:blur-2xl opacity-30"></div>
                   
-                  {/* Card Container - Responsive */}
-                  <div className="relative card-glass rounded-[1.5rem] sm:rounded-[1.75rem] md:rounded-[2rem] p-3 sm:p-4 md:p-6 border-2 border-white/20 overflow-hidden backdrop-blur-2xl">
-                    {/* Top Shine - Responsive */}
-                    <div className="absolute top-0 left-0 right-0 h-16 sm:h-24 md:h-32 bg-gradient-to-b from-white/10 to-transparent pointer-events-none"></div>
-                    
-                    {/* LORT Logo Display - Responsive */}
-                    <div className="h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black relative">
-                      {/* Animated Background Glow */}
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,107,53,0.15),transparent_60%)] animate-pulse"></div>
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(255,107,53,0.1),transparent_50%)]"></div>
-                      
-                      {/* Dot Pattern */}
-                      <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,107,53,0.1)_1px,transparent_1px)] bg-[size:24px_24px] opacity-30"></div>
-                      
-                      {/* Center Logo Container - Responsive */}
-                      <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 md:p-8">
-                        <div className="relative animate-float group">
-                          {/* Enhanced Multi-layer Glow - Responsive */}
-                          <div className="absolute -inset-8 sm:-inset-12 md:-inset-16 bg-gradient-to-r from-orange-500/30 to-red-500/30 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
-                          <div className="absolute -inset-6 sm:-inset-8 md:-inset-12 bg-gradient-to-r from-orange-400/20 to-red-400/20 rounded-full blur-xl sm:blur-2xl group-hover:scale-110 transition-all duration-1000"></div>
-                          <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 bg-gradient-to-r from-orange-300/10 to-red-300/10 rounded-full blur-lg sm:blur-xl group-hover:scale-105 transition-all duration-700"></div>
-                          
-                          
-                          {/* Logo with Enhanced Animations - Responsive - Clean Design */}
-                          <div className="relative z-10 group-hover:scale-105 sm:group-hover:scale-110 group-hover:rotate-1 sm:group-hover:rotate-3 transition-all duration-700 ease-out">
-                            <Image 
-                              src="/images/logos/Adsız tasarımd.png" 
-                              alt="LORT APP" 
-                              width={160}
-                              height={160}
-                              className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 drop-shadow-[0_15px_60px_rgba(255,107,53,0.4)] sm:drop-shadow-[0_20px_80px_rgba(255,107,53,0.6)] md:drop-shadow-[0_25px_100px_rgba(255,107,53,0.6)] group-hover:drop-shadow-[0_20px_100px_rgba(255,107,53,0.7)] sm:group-hover:drop-shadow-[0_30px_120px_rgba(255,107,53,0.8)] transition-all duration-500"
-                              priority
-                            />
-                          </div>
-                          
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>
+                   {/* LORT Logo - Responsive */}
+                   <div className="flex items-center justify-center relative">
+                     {/* Turuncu Işık Efekti - Responsive */}
+                     <div className="absolute -inset-8 sm:-inset-12 md:-inset-16 lg:-inset-20 xl:-inset-24 2xl:-inset-28 bg-gradient-to-r from-orange-500/20 via-red-500/15 to-orange-500/20 rounded-full blur-2xl sm:blur-3xl animate-pulse"></div>
+                     <div className="absolute -inset-6 sm:-inset-8 md:-inset-12 lg:-inset-16 xl:-inset-20 2xl:-inset-24 bg-gradient-to-r from-orange-400/15 via-red-400/10 to-orange-400/15 rounded-full blur-xl sm:blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                     <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 lg:-inset-12 xl:-inset-16 2xl:-inset-20 bg-gradient-to-r from-orange-300/10 via-red-300/8 to-orange-300/10 rounded-full blur-lg sm:blur-xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                     
+                     {/* Logo */}
+                     <div className="relative z-10 animate-float">
+                       <Image 
+                         src="/images/logos/Adsız tasarımd.png" 
+                         alt="LORT APP Logo" 
+                         width={200}
+                         height={200}
+                         className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] 2xl:w-[32rem] 2xl:h-[32rem] object-contain"
+                         priority
+                       />
+                     </div>
+                   </div>
                 </div>
               </div>
             </div>
