@@ -155,7 +155,7 @@ export default async function HomePageEN() {
                           <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 bg-gradient-to-r from-orange-300/10 to-red-300/10 rounded-full blur-lg sm:blur-xl group-hover:scale-105 transition-all duration-700"></div>
                           
                           
-                          {/* Logo with Enhanced Animations - Responsive */}
+                          {/* Logo with Enhanced Animations - Responsive - Clean Design */}
                           <div className="relative z-10 group-hover:scale-105 sm:group-hover:scale-110 group-hover:rotate-1 sm:group-hover:rotate-3 transition-all duration-700 ease-out">
                             <Image 
                               src="/images/logos/Adsız tasarımd.png" 
