@@ -90,7 +90,7 @@ export function Countdown({
 
       {/* Countdown Grid */}
       <div className="grid grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6 max-w-4xl mx-auto">
-        {timeUnits.map((unit, index) => (
+        {timeUnits.map((unit) => (
           <div key={unit.label} className="relative group">
             {/* Glow Effect */}
             <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl sm:rounded-3xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
