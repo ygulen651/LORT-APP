@@ -156,7 +156,7 @@ export default async function HomePageEN() {
             {/* Countdown Section */}
             <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24">
               <Countdown 
-                targetDate={new Date('2025-10-28T23:59:59')} 
+                targetDate={new Date('2025-10-30T23:59:59')} 
                 title="Coming Soon"
                 labels={{
                   days: 'Days',
