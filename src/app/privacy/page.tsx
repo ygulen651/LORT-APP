@@ -1,80 +1,11 @@
+'use client';
+
 import React from 'react';
+import styles from './privacy-styles.module.css';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <style jsx global>{`
-        :root { 
-          --fg: #0b0f1a; 
-          --muted: #4b5563; 
-          --link: #0ea5e9; 
-          --bg: #ffffff; 
-          --hr: #e5e7eb; 
-        }
-        body {
-          margin: 0;
-          padding: 0;
-          background: var(--bg);
-          color: var(--fg);
-          font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, Helvetica, sans-serif;
-        }
-        .container {
-          max-width: 900px;
-          margin: 48px auto;
-          padding: 0 20px;
-        }
-        h1 {
-          font-size: 2rem;
-          margin: 0.2rem 0 1rem;
-        }
-        h2 {
-          font-size: 1.5rem;
-          margin: 2rem 0 0.75rem;
-        }
-        h3 {
-          font-size: 1.25rem;
-          margin: 1.5rem 0 0.5rem;
-        }
-        p {
-          margin: 0.5rem 0;
-        }
-        ul {
-          padding-left: 1.2rem;
-        }
-        li {
-          margin: 0.25rem 0;
-        }
-        a {
-          color: var(--link);
-          text-decoration: none;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-        .meta {
-          color: var(--muted);
-        }
-        hr {
-          border: 0;
-          border-top: 1px solid var(--hr);
-          margin: 2rem 0;
-        }
-        .note {
-          background: #f8fafc;
-          border: 1px solid var(--hr);
-          padding: 12px 14px;
-          border-radius: 10px;
-        }
-        .blockquote {
-          border-left: 4px solid var(--hr);
-          padding-left: 12px;
-          color: var(--muted);
-        }
-        footer {
-          margin: 2.5rem 0 3.5rem;
-          color: var(--muted);
-        }
-      `}</style>
+    <div className={styles.privacyContainer}>
 
       <header>
         <h1>LORTAPP GİZLİLİK POLİTİKASI</h1>
