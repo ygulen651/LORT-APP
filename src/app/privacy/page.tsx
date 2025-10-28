@@ -39,8 +39,12 @@ const PrivacyPolicy = () => {
       <section id="veri-sorumlusu">
         <h2>2) Veri Sorumlusu</h2>
         <ul>
-          <li><strong>Belirlenmiş Ülkeler/UK için:</strong> LORTAPP Ireland Limited (ticari unvan ve adres eklenecek) veri sorumlusudur.</li>
-          <li><strong>Diğer bölgeler için:</strong> LORTAPP Teknoloji A.Ş. (adres: [adres ekleyin]) veri sorumlusudur.</li>
+          <li><strong>Veri Sorumlusu:</strong> IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ.</li>
+          <li><strong>Adres:</strong> Alavardı Mahallesi Söke Sokak, Uçan Balonlar Kreş ve Bakım Evi No:18/1, Meram/KONYA</li>
+          <li><strong>Telefon:</strong> <a href="tel:+905325094599">0532 509 45 99</a></li>
+          <li><strong>Vergi Dairesi:</strong> Mevlana V.D.</li>
+          <li><strong>Vergi No:</strong> 465 134 4090</li>
+          <li><strong>Ticaret Sicil No:</strong> 63953</li>
           <li><strong>İletişim:</strong> <a href="mailto:lortapp01@gmail.com">lortapp01@gmail.com</a></li>
           <li><strong>Veri Koruma Görevlisi (DPO):</strong> <a href="mailto:lortapp01@gmail.com">lortapp01@gmail.com</a></li>
         </ul>
