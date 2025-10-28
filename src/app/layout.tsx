@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { Analytics } from '@vercel/analytics/react'
-import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -66,7 +65,6 @@ export default function RootLayout({
           <main className="flex-grow">
             {children}
           </main>
-          <Footer />
           <Analytics />
         </ThemeProvider>
       </body>

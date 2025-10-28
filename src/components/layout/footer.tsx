@@ -45,6 +45,7 @@ export function Footer() {
                   ? 'Smart matching in export and supply — find the right partner in minutes with LORT APP.'
                   : 'İhracat ve tedarikte akıllı eşleştirme – LORT APP ile doğru partneri dakikalar içinde bulun.'}
               </p>
+              
 
               {/* Social Media with Modern Cards - Mobile Optimized */}
               <div className="flex gap-2 sm:gap-3 justify-center">
@@ -115,10 +116,17 @@ export function Footer() {
 
           {/* Bottom Bar - Mobile Optimized */}
           <div className="pt-4 sm:pt-6 md:pt-8 border-t border-white/10">
-            <div className="text-center px-4">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 px-4">
               <p className="text-xs sm:text-sm text-gray-400">
                 {isEn ? '© 2025 LORT APP. All rights reserved.' : '© 2025 LORT APP. Tüm hakları saklıdır.'}
               </p>
+              <span className="hidden sm:inline text-gray-600">•</span>
+              <Link 
+                href="/privacy" 
+                className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300"
+              >
+                {isEn ? 'Privacy Policy' : 'Gizlilik Politikası'}
+              </Link>
             </div>
           </div>
         </div>
