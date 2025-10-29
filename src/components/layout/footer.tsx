@@ -123,21 +123,21 @@ export function Footer() {
               <span className="hidden sm:inline text-gray-600">•</span>
               <div className="flex items-center gap-4 flex-wrap justify-center">
                 <Link 
-                  href="/gizlilik" 
+                  href="/privacy" 
                   className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 whitespace-nowrap"
                 >
                   {isEn ? 'Privacy Policy' : 'Gizlilik Politikası'}
                 </Link>
                 <span className="text-gray-600 hidden sm:inline">•</span>
                 <Link 
-                  href="/mesafeli-satis" 
+                  href="/mesafeli-satis-sozlesmesi" 
                   className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 whitespace-nowrap"
                 >
                   {isEn ? 'Distance Sales Agreement' : 'Mesafeli Satış Sözleşmesi'}
                 </Link>
                 <span className="text-gray-600 hidden sm:inline">•</span>
                 <Link 
-                  href="/iade" 
+                  href="/premium-abonelik-ve-iade-politikasi" 
                   className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 whitespace-nowrap"
                 >
                   {isEn ? 'Return Policy' : 'İade Politikası'}
