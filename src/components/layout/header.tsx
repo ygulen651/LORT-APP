@@ -49,12 +49,16 @@ export function Header() {
 
           {/* Right Controls */}
           <div className="hidden md:flex items-center gap-4">
-            <LangSwitcher />
+            <div className="p-2 rounded-full bg-white/5 hover:bg-orange-500/20 transition-colors duration-300">
+              <LangSwitcher />
+            </div>
           </div>
 
           {/* Mobile Menu */}
           <div className="flex md:hidden items-center gap-3">
-            <LangSwitcher />
+            <div className="p-2 rounded-full bg-white/5 hover:bg-orange-500/20 transition-colors duration-300">
+              <LangSwitcher />
+            </div>
             <button className="p-3 rounded-2xl glass-dark hover:bg-white/20 transition-all duration-300 hover:scale-105">
               <Menu className="h-5 w-5 text-white" />
             </button>

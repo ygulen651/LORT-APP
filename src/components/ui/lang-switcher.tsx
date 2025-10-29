@@ -1,10 +1,8 @@
 'use client'
 
 import * as React from 'react'
-import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { Globe } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 
 export function LangSwitcher() {
   const router = useRouter()
@@ -51,22 +49,20 @@ export function LangSwitcher() {
   }
 
   const nextLang = currentLang === 'tr' ? 'en' : 'tr'
-  const href = (() => {
-    if (!pathname) return '/'
-    const isEn = pathname.startsWith('/en')
-    if (nextLang === 'en') return isEn ? pathname : `/en${pathname === '/' ? '' : pathname}`
-    return isEn ? pathname.replace(/^\/en(\/|$)/, '/') : pathname
-  })()
 
   return (
-    <Button asChild variant="ghost" size="icon" aria-label="Dil değiştir" title={currentLang === 'tr' ? 'Switch to English' : 'Türkçe\'ye geç'}>
-      <Link href={href} prefetch={false} onClick={(e) => {
+    <button 
+      onClick={(e) => {
+        e.preventDefault()
         e.stopPropagation()
         switchLocale(nextLang)
-      }}>
-        <Globe className="h-[1.2rem] w-[1.2rem]" />
-        <span className="sr-only">Dil değiştir</span>
-      </Link>
-    </Button>
+      }}
+      className="flex items-center justify-center h-8 w-8 rounded-full text-white hover:bg-orange-500/30 transition-colors duration-200"
+      aria-label="Dil değiştir" 
+      title={currentLang === 'tr' ? 'Switch to English' : 'Türkçe\'ye geç'}
+    >
+      <Globe className="h-5 w-5" />
+      <span className="sr-only">Dil değiştir</span>
+    </button>
   )
 }
