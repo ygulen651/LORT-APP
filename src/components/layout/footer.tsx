@@ -121,19 +121,33 @@ export function Footer() {
                 {isEn ? '© 2025 LORT APP. All rights reserved.' : '© 2025 LORT APP. Tüm hakları saklıdır.'}
               </p>
               <span className="hidden sm:inline text-gray-600">•</span>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-wrap justify-center">
                 <Link 
                   href="/privacy" 
-                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300"
+                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 whitespace-nowrap"
                 >
                   {isEn ? 'Privacy Policy' : 'Gizlilik Politikası'}
                 </Link>
-                <span className="text-gray-600">•</span>
+                <span className="text-gray-600 hidden sm:inline">•</span>
+                <Link 
+                  href="/mesafeli-satis-sozlesmesi" 
+                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 whitespace-nowrap"
+                >
+                  {isEn ? 'Sales Agreement' : 'Mesafeli Satış Sözleşmesi'}
+                </Link>
+                <span className="text-gray-600 hidden sm:inline">•</span>
                 <Link 
                   href="/contact" 
-                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300"
+                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 whitespace-nowrap"
                 >
                   {isEn ? 'Contact' : 'İletişim'}
+                </Link>
+                <span className="text-gray-600 hidden sm:inline">•</span>
+                <Link 
+                  href="/premium-abonelik-ve-iade-politikasi" 
+                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 whitespace-nowrap"
+                >
+                  {isEn ? 'Premium & Refund Policy' : 'Premium & İade Politikası'}
                 </Link>
               </div>
             </div>
