@@ -121,12 +121,21 @@ export function Footer() {
                 {isEn ? '© 2025 LORT APP. All rights reserved.' : '© 2025 LORT APP. Tüm hakları saklıdır.'}
               </p>
               <span className="hidden sm:inline text-gray-600">•</span>
-              <Link 
-                href="/privacy" 
-                className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300"
-              >
-                {isEn ? 'Privacy Policy' : 'Gizlilik Politikası'}
-              </Link>
+              <div className="flex items-center gap-4">
+                <Link 
+                  href="/privacy" 
+                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300"
+                >
+                  {isEn ? 'Privacy Policy' : 'Gizlilik Politikası'}
+                </Link>
+                <span className="text-gray-600">•</span>
+                <Link 
+                  href="/contact" 
+                  className="text-xs sm:text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300"
+                >
+                  {isEn ? 'Contact' : 'İletişim'}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

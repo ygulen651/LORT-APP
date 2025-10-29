@@ -5,7 +5,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --background-rgb: 255, 255, 255; /* Beyaz arka plan */
+  background: #ffffff; /* Ekstra güvence için */
   --primary: 17 90% 60%;
   --primary-foreground: 0 0% 0%;
   --secondary: 0 0% 10%;
@@ -26,8 +27,8 @@ body, html {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: #000000;
+  background: #ffffff;
 }
 
 * {
@@ -35,8 +36,8 @@ body, html {
 }
 
 .dark {
-  --background: 0 0% 0%;
-  --foreground: 0 0% 100%;
+  --background: 0 0% 100%; /* Beyaz arka plan */
+  --foreground: 0 0% 0%; /* Siyah yazı rengi */
   --primary: 17 90% 60%;
   --primary-foreground: 0 0% 0%;
   --secondary: 0 0% 10%;
