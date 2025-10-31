@@ -24,9 +24,9 @@ export default function MesafeliSatisSozlesmesi() {
         <h2>1. TARAFLAR</h2>
         <h3>1.1. Satıcı / Hizmet Sağlayıcı</h3>
         <p>
-          <strong>Unvan:</strong> LORTAPP Dijital Hizmetleri<br />
-          <strong>Adres:</strong> Karaman / Türkiye<br />
-          <strong>E-posta:</strong> lortapp01@gmail.com<br />
+          <strong>Unvan:</strong> IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ.<br />
+          <strong>Adres:</strong>  Türkiye<br />
+          <strong>E-posta:</strong> info@lortapp.com.tr<br />
           <strong>Web:</strong> https://www.lort.app
         </p>
 
@@ -111,8 +111,8 @@ export default function MesafeliSatisSozlesmesi() {
         </p>
 
         <div className={styles.contactInfo}>
-          <p>📍 LORTAPP DİJİTAL HİZMETLERİ</p>
-          <p>📧 lortapp01@gmail.com</p>
+          <p>📍 © 2025 IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ. Tüm hakları saklıdır.</p>
+          <p>📧 info@lortapp.com.tr</p>
           <p>🌐 <a href="https://www.lort.app" className={styles.link}>www.lort.app</a></p>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function PremiumAbonelikPolitikasi() {
           <li>Kullanım tespiti; Premium özelliklerin (ör. mesajlaşma, eşleşme, analiz ekranı vb.) kullanılıp kullanılmadığına göre yapılır.</li>
         </ul>
         <p>İade talebi için:<br />
-        📧 <a href="mailto:lortapp01@gmail.com" className={styles.link}>lortapp01@gmail.com</a> adresine, ödeme dekontunuzu ve kullanıcı adınızı içeren bir e-posta gönderebilirsiniz.</p>
+        📧 <a href="mailto:info@lortapp.com.tr" className={styles.link}>info@lortapp.com.tr</a> adresine, ödeme dekontunuzu ve kullanıcı adınızı içeren bir e-posta gönderebilirsiniz.</p>
 
         <h3>2.2 Abonelik İptali</h3>
         <ul>
@@ -75,7 +75,7 @@ export default function PremiumAbonelikPolitikasi() {
 
         <h2>5. İade Başvurusu Süreci</h2>
         <ol>
-          <li>Aboneliğinize ait kullanıcı adı, ödeme tarihi, ödeme yöntemi ve gerekçenizi belirterek e-posta gönderin: 📧 <a href="mailto:lortapp01@gmail.com" className={styles.link}>lortapp01@gmail.com</a></li>
+          <li>Aboneliğinize ait kullanıcı adı, ödeme tarihi, ödeme yöntemi ve gerekçenizi belirterek e-posta gönderin: 📧 <a href="mailto:info@lortapp.com.tr" className={styles.link}>info@lortapp.com.tr</a></li>
           <li>Talebiniz 5 iş günü içinde değerlendirilir.</li>
           <li>Uygun görülen iadeler, ödemenin yapıldığı aynı yöntemle 7–14 iş günü içinde yapılır.</li>
         </ol>
@@ -87,8 +87,8 @@ export default function PremiumAbonelikPolitikasi() {
         </ul>
 
         <div className={styles.contactInfo}>
-          <p>📍 LORTAPP DİJİTAL HİZMETLERİ</p>
-          <p>📧 <a href="mailto:lortapp01@gmail.com" className={styles.link}>lortapp01@gmail.com</a></p>
+          <p>📍 © 2025 IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ. Tüm hakları saklıdır.</p>
+          <p>📧 <a href="mailto:info@lortapp.com.tr" className={styles.link}>info@lortapp.com.tr</a></p>
           <p>🌐 <a href="https://www.lort.app" className={styles.link}>www.lort.app</a></p>
           <p>Karaman / Türkiye</p>
         </div>

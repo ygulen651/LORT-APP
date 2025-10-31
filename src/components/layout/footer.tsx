@@ -118,7 +118,7 @@ export function Footer() {
           <div className="pt-4 sm:pt-6 md:pt-8 border-t border-white/10">
             <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 px-4">
               <p className="text-xs sm:text-sm text-gray-400">
-                {isEn ? '© 2025 LORT APP. All rights reserved.' : '© 2025 LORT APP. Tüm hakları saklıdır.'}
+                {isEn ? '© 2025 IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ. All rights reserved.' : '© 2025 IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ. Tüm hakları saklıdır.'}
               </p>
               <span className="hidden sm:inline text-gray-600">•</span>
               <div className="flex items-center gap-4 flex-wrap justify-center">

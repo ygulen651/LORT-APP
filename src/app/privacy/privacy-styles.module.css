@@ -184,6 +184,13 @@ html, body {
   margin-top: 2px;
 }
 
+.companyName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 1rem 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .privacyContainer {

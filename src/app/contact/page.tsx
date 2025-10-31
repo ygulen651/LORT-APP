@@ -62,7 +62,7 @@ const ContactPage = () => {
               <FiMail />
             </div>
             <h3>E-posta</h3>
-            <a href="mailto:lortapp01@gmail.com" className={styles.infoLink}>lortapp01@gmail.com</a>
+            <a href="mailto:info@lortapp.com.tr" className={styles.infoLink}>info@lortapp.com.tr</a>
           </div>
 
           <div className={styles.infoCard}>
@@ -78,6 +78,7 @@ const ContactPage = () => {
               <FiMapPin />
             </div>
             <h3>Adres</h3>
+            <h3>IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ.</h3>
             <p>Alavardı Mahallesi Söke Sokak, Uçan Balonlar Kreş ve Bakım Evi No:18/1, Meram/KONYA</p>
           </div>
 

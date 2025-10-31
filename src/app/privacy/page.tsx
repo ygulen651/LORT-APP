@@ -357,7 +357,7 @@ const PrivacyPolicy = () => {
           <li><strong>Anonim veriler:</strong> Kişisel olmayan/anonimleştirilmiş veriler (istatistikler, trend analizleri) saklanmaya devam edebilir.</li>
         </ul>
         <p className={styles.paragraph}>
-          Hesabınızı uygulama içinden <strong>Ayarlar ▸ Hesabı Kapat</strong> adımlarını izleyerek kapatabilir veya <a href="mailto:lortapp01@gmail.com" className={styles.link}>lortapp01@gmail.com</a> üzerinden destek talep edebilirsiniz. Ayrıca, veri sorumlusu olarak şirketimizle <a href="#veri-sorumlusu" className={styles.link}>iletişim</a> kurabilirsiniz.
+          Hesabınızı uygulama içinden <strong>Ayarlar ▸ Hesabı Kapat</strong> adımlarını izleyerek kapatabilir veya <a href="mailto:info@lortapp.com.tr" className={styles.link}>info@lortapp.com.tr</a> üzerinden destek talep edebilirsiniz. Ayrıca, veri sorumlusu olarak şirketimizle <a href="#veri-sorumlusu" className={styles.link}>iletişim</a> kurabilirsiniz.
         </p>
       </section>
 
@@ -430,13 +430,14 @@ const PrivacyPolicy = () => {
         <h2 className={styles.sectionTitle}>Bize Ulaşın</h2>
         <div className={styles.contactInfo}>
           <h3 className={styles.sectionSubtitle}>İletişim Bilgileri</h3>
+          <p className={styles.companyName}>IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ.</p>
           <div className={styles.contactItem}>
             <FiGlobe className={styles.contactIcon} />
             <a href="https://www.lort.app/" target="_blank" rel="noopener noreferrer" className={styles.link}>www.lort.app</a>
           </div>
           <div className={styles.contactItem}>
             <FiMail className={styles.contactIcon} />
-            <a href="mailto:lortapp01@gmail.com" className={styles.link}>lortapp01@gmail.com</a>
+            <a href="mailto:info@lortapp.com.tr" className={styles.link}>info@lortapp.com.tr</a>
           </div>
           <div className={styles.contactItem}>
             <FiMapPin className={styles.contactIcon} />
@@ -463,7 +464,7 @@ const PrivacyPolicy = () => {
           
           <div className={styles.contactItem}>
             <FiMail className={styles.contactIcon} />
-            <a href="mailto:lortapp01@gmail.com" className={styles.link}>lortapp01@gmail.com</a>
+            <a href="mailto:info@lortapp.com.tr" className={styles.link}>info@lortapp.com.tr</a>
           </div>
         </div>
         
