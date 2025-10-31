@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const PricingSectionTR = () => {
   return (
@@ -97,6 +98,11 @@ const PricingSectionTR = () => {
               </li>
             </ul>
             
+            <Link href="/odeme?plan=normal" className="mt-8 block w-full">
+              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+                Satın Al
+              </button>
+            </Link>
           </div>
 
           {/* Premium Plan */}
@@ -163,6 +169,11 @@ const PricingSectionTR = () => {
               </li>
             </ul>
             
+            <Link href="/odeme?plan=premium" className="mt-8 block w-full">
+              <button className="w-full bg-white text-orange-600 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+                Satın Al
+              </button>
+            </Link>
           </div>
         </div>
         
