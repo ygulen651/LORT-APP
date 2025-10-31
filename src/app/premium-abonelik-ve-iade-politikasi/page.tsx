@@ -83,14 +83,14 @@ export default function PremiumAbonelikPolitikasi() {
         <h2>6. Uyuşmazlık Çözümü</h2>
         <ul>
           <li>İade politikasıyla ilgili anlaşmazlıklar öncelikle LortApp destek birimi üzerinden çözülmeye çalışılır.</li>
-          <li>Çözüm sağlanamazsa, Karaman Tüketici Hakem Heyeti ve Karaman Mahkemeleri yetkilidir.</li>
+          <li>Çözüm sağlanamazsa, Konya Tüketici Hakem Heyeti ve Konya Mahkemeleri yetkilidir.</li>
         </ul>
 
         <div className={styles.contactInfo}>
           <p>📍 © 2025 IHLAMUR EĞİTİM VE DANIŞMANLIK LTD. ŞTİ. Tüm hakları saklıdır.</p>
           <p>📧 <a href="mailto:info@lortapp.com.tr" className={styles.link}>info@lortapp.com.tr</a></p>
           <p>🌐 <a href="https://www.lort.app" className={styles.link}>www.lort.app</a></p>
-          <p>Karaman / Türkiye</p>
+          <p>Konya / Türkiye</p>
         </div>
       </div>
     </div>
