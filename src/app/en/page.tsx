@@ -3,6 +3,7 @@ import { FadeSlider } from '@/components/ui/fade-slider'
 import { Countdown } from '@/components/ui/countdown'
 import { getContentLocalized } from '@/lib/content'
 import PricingSection from '@/components/pricing-section'
+import { FAQSectionEN } from '@/components/faq-section-en'
 import { BarChart3, ChevronRight, Globe, Lock, MessageSquare, Rocket, Target } from 'lucide-react'
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -437,6 +438,7 @@ export default async function HomePageEN() {
         </Container>
       </section>
 
+      <FAQSectionEN />
       <PricingSection />
     </main>
   )

@@ -13,6 +13,7 @@ import {
     Target
 } from 'lucide-react'
 import PricingSectionTR from '@/components/pricing-section-tr'
+import { FAQSection } from '@/components/faq-section'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -449,6 +450,7 @@ export default async function HomePage() {
         </Container>
       </section>
 
+      <FAQSection />
       <PricingSectionTR />
     </main>
   )
