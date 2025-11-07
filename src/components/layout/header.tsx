@@ -1,7 +1,7 @@
 'use client'
 
 import { LangSwitcher } from '@/components/ui/lang-switcher'
-import { Menu, Sparkles } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Container } from './container'
