@@ -6,7 +6,7 @@ const PricingSection = () => {
     <section className="bg-gradient-to-b from-gray-900 to-black py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-orange-500 sm:text-5xl">LORT Plans</h2>
+          <h2 className="text-4xl font-extrabold text-orange-500 sm:text-5xl">LORT PRODUCTS AND SERVICES</h2>
           <p className="mt-4 text-xl text-gray-400">Clear options for visibility and trust in exports</p>
         </div>
 
