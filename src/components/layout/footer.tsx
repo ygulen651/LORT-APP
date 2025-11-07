@@ -22,7 +22,7 @@ export function Footer() {
           <div className="flex flex-col items-center text-center gap-6 sm:gap-8">
             {/* Brand Section - Mobile Optimized */}
             <div className="w-full">
-              <Link href="/" className="group inline-flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-6 sm:mb-8">
+              <Link href="/" className="group inline-flex items-center mb-6 sm:mb-8">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
                   <Image 
@@ -32,11 +32,6 @@ export function Footer() {
                     height={400}
                     className="relative h-16 w-auto sm:h-20 md:h-24 drop-shadow-2xl"
                   />
-                </div>
-                <div>
-                  <span className="text-3xl sm:text-4xl md:text-5xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-                    LORT APP
-                  </span>
                 </div>
               </Link>
               

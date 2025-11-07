@@ -20,8 +20,8 @@ export function Header() {
       
       <Container>
         <div className="relative flex h-24 items-center justify-between">
-          {/* Ultra Modern Logo */}
-          <Link href="/" className="group flex items-center space-x-4 hover:scale-105 transition-all duration-500">
+          {/* Logo Only */}
+          <Link href="/" className="group flex items-center hover:scale-105 transition-all duration-500">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-all duration-500"></div>
               <div className="relative">
@@ -32,17 +32,6 @@ export function Header() {
                   height={250}
                   className="h-16 w-auto drop-shadow-2xl transition-all duration-500 group-hover:drop-shadow-[0_0_25px_rgba(255,107,53,0.5)]"
                 />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-3xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent drop-shadow-lg">
-                LORT
-              </span>
-              <div className="flex items-center gap-2 -mt-1">
-                <span className="text-sm font-bold text-orange-400/80 tracking-widest">
-                  APP
-                </span>
-                <Sparkles className="w-3 h-3 text-orange-400 animate-pulse" />
               </div>
             </div>
           </Link>

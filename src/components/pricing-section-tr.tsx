@@ -25,8 +25,12 @@ const PricingSectionTR = () => {
             <div className="mt-8">
               <p className="text-4xl font-extrabold text-white">
                 $7 <span className="text-xl font-medium text-gray-400">/ay</span>
+                <span className="block text-2xl font-bold text-orange-300">~215₺</span>
               </p>
-              <p className="mt-2 text-gray-400">veya yıllık $69</p>
+              <p className="mt-2 text-gray-400">
+                <span>veya yıllık $69</span>
+                <span className="block text-orange-300">~2,120₺</span>
+              </p>
             </div>
             
             <ul className="mt-8 space-y-3">
@@ -119,6 +123,7 @@ const PricingSectionTR = () => {
             <div className="mt-8">
               <p className="text-4xl font-extrabold text-white">
                 $99 <span className="text-xl font-medium text-white/90">/yıl</span>
+                <span className="block text-2xl font-bold text-amber-200">~3,050₺</span>
               </p>
               <p className="mt-2 text-white/90">Yıllık tek ödeme</p>
             </div>
