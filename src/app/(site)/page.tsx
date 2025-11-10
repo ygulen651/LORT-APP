@@ -1,6 +1,5 @@
 import { Container } from '@/components/layout/container'
 import { FadeSlider } from '@/components/ui/fade-slider'
-import { Countdown } from '@/components/ui/countdown'
 import { getContent } from '@/lib/content'
 import {
     BarChart3,
@@ -128,15 +127,6 @@ export default async function HomePage() {
                 </div>
               </div>
             </div>
-            
-            {/* Countdown Section */}
-            <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24">
-              <Countdown 
-                targetDate={new Date('2025-11-07T23:59:59')} 
-                title="Coming Soon" 
-              />
-            </div>
-            
             {/* Store Buttons Section - Ultra Modern Design - Complete */}
             <div className="mt-8 sm:mt-12 md:mt-16 flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center">
               {/* Apple Store Button */}
